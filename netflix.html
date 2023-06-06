@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎥Netflix</title>
+    <style>
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px 40px;
+      }
+
+      body {
+        background: #f5f5f1;
+        font-family: HK Grotesk;
+      }
+
+      h1 {
+        text-align: center;
+        color: #e50914;
+        font-family: Bebas Neue;
+        font-size: 86px;
+        margin: 0 auto;
+      }
+
+      h2 {
+        text-align: center;
+        color: #e50914;
+        font-family: PP Mori;
+        font-variant-caps: all-small-caps;
+        margin: 0 auto 20px;
+        font-size: 22px;
+        border: 1px solid #e50914;
+        border-radius: 10px;
+        padding: 15px;
+      }
+
+      p {
+        line-height: 1.5;
+        text-align: justify;
+      }
+
+      span {
+        color: #e50914;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+
+      button {
+        background: #e50914;
+        color: #f5f5f1;
+        font-variant-caps: all-small-caps;
+        font-size: 20px;
+        font-weight: bold;
+        display: block;
+        margin: 25px auto 25px;
+        padding: 15px 25px;
+        border: 1px solid #e50914;
+        border-radius: 4px;
+        box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
+        transition: all 150ms ease-in-out;
+      }
+
+      button:hover {
+        background: #f5f5f1;
+        color: #e50914;
+        border: 1px solid #e50914;
+        cursor: pointer;
+      }
+
+      h3 {
+        margin: 0 auto;
+      }
+
+      ol {
+        display: block;
+        margin: 10px auto 16px;
+        line-height: 1.5;
+      }
+
+      a {
+        color: #e50914;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+        font-size: 16px;
+        font-variant-caps: all-small-caps;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>NETFLIX</h1>
+
+      <h2>One network – the entire globe</h2>
+
+      <p>
+        <span><em>Netflix</em></span> is probably the first thing that comes to
+        mind when you think about streaming TV shows and movies. Despite heavy
+        competition from rivals such as HBO Max and Disney Plus, it remains the
+        best choice for streaming entertainment.
+      </p>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/073/226/original/43e0db2f-fea0-4308-bfb9-09f2a88f6ee4_what_is_netflix_1_en_%281%29.png?1679571948"
+        alt="Netflix-image"
+      />
+
+      <p>
+        Watching something on
+        <span><em>Netflix</em></span> from the comfort of a living room after a
+        hard day at work is a real treat. As the company is growing, their
+        services are getting even better. At the moment, their subscribers get
+        pretty accurate recommendations on the basis of their watching
+        preferences. Since the original <span><em>Netflix</em></span> production
+        is on the rise, people get high value for money. This has been the
+        philosophy of this streaming service from the very beginning. As such,
+        it contains all the reasons behind <span><em>Netflix</em></span
+        >’s success.
+      </p>
+
+      <button>Get Started</button>
+
+      <h3>To start watching Netflix:</h3>
+
+      <ol>
+        <li>
+          Visit
+          <a href="https://www.netflix.com/signup" target="_blanc">
+            netflix.com/signup
+          </a>
+        </li>
+        <li>
+          <a href="https://help.netflix.com/en/node/24926" target="_blanc">
+            Choose a plan
+          </a>
+        </li>
+        <li>Create an account</li>
+        <li>
+          Enter a
+          <a href="https://help.netflix.com/en/node/116380" target="_blanc">
+            payment method
+          </a>
+        </li>
+      </ol>
+
+      <hr />
+
+      <div class="footer">Coded by Mariia Pavlenko</div>
+    </div>
+    <script>
+      function start() {
+        let firstName = prompt("What is your first name?");
+        let lastName = prompt("What is your last name?");
+        let email = prompt("What is your email address?");
+        let age = prompt("How old are you?");
+
+        if (age >= 16) {
+          alert(
+            `Hi, ${firstName}👋 Congrats! You will be subscribed to Netflix🎥`
+          );
+        } else {
+          alert(
+            `Hi, ${firstName}👋 Sorry but you cannot be subscribed to Netflix🎥`
+          );
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", start);
+    </script>
+  </body>
+</html>
